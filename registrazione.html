@@ -302,10 +302,10 @@
 
       <div class="nav-scroller py-1 mb-3 border-bottom">
         <nav class="nav nav-underline justify-content-between">
-          <a class="nav-item nav-link link-body-emphasis active" href="#">Home</a>
+          <a class="nav-item nav-link link-body-emphasis" href="index.html">Home</a>
           <a class="nav-item nav-link link-body-emphasis" href="agenda.html">Agenda</a>
           <a class="nav-item nav-link link-body-emphasis" href="speakers.html">Speakers</a>
-          <a class="nav-item nav-link link-body-emphasis" href="registrazione.html">Registrazione</a>
+          <a class="nav-item nav-link link-body-emphasis active" href="registrazione.html">Registrazione</a>
         </nav>
       </div>
     </div>
@@ -321,74 +321,14 @@
       <div class="row g-5">
         <div class="col-md-8">
 
-          <article class="blog-post">
-            <h2 class="display-5 link-body-emphasis mb-1">Abbiamo pubblicato l'agenda!</h2>
-            <p class="blog-post-meta">
-              March 18, 2024 by <a target="_blank" href="https://www.linkedin.com/in/marcoparenzan/">Marco Parenzan</a>
-            </p>
-
-            <p>
-              Abbiamo pubblicato l'agenda del Global Azure 2024 Pordenone e la trovi <a href="agenda.html">qui</a>. Non è completa, ma insomma, i contenuti ci sono e potrà solo che essere meglio!
-            </p>
-            <p>
-                Per registrarti, clicca <a href="http://gab2024pn.eventbrite.it/">qui</a>, sai che ci piace sapere quanti siete!
-              </p>
-              <p>
-                L'evento è gratuito grazie agli sponsor che ringraziamo!
-                <ul>
-                  <li><a href="http://www.altitudo.com/">Altitudo</a></li>
-                  <li><a href="http://www.beantech.it/">beanTech</a></li>
-                  <li><a href="http://www.overnet.education/">Overnet Education</a></li>
-                  <li><a href="http://www.stesi.it/">Stesi Srl</a></li>
-                  <li><a href="http://www.unipordenone.it/">Consorzio Universitario di Pordenone</a></li>
-                  <li><a href="http://www.adawen.it/">Adawen</a></li>
-                  <li><a href="https://azurebox.it/">AzureBox</a></li>
-                  <li><a href="https://beta80group.it/">Beta 80 Group</a></li>
-                  <li><a href="https://elettrone.com/">Elettrone</a></li>
-                  <li><a href="https://www.fairmat.com/">Fairmat</a></li>
-                  <li><a href="https://www.jmatica.com/">jmatica</a></li>
-                </ul>
-              </p>          
-          </article>
-
-          <article class="blog-post">
-            <h2 class="display-5 link-body-emphasis mb-1">Call for speaker open!</h2>
-            <p class="blog-post-meta">
-              February 28, 2024 by <a target="_blank" href="https://www.linkedin.com/in/marcoparenzan/">Marco Parenzan</a>
-            </p>
-
-            <p>
-              Stiamo organizzando il Global Azure 2024 del Triveneto! Se hai una sessione da proporre, clicca <a href="https://sessionize.com/gab2024pn">qui</a>
-            </p>
-            <p>
-                Non abbiamo ancora una agenda, ma intanto se vuoi registrarti, clicca <a href="http://gab2024pn.eventbrite.it/">qui</a>
-              </p>
-              <p>
-                L'evento è gratuito grazie agli sponsor che ringraziamo!
-                <ul>
-                  <li><a href="http://www.altitudo.com/">Altitudo</a></li>
-                  <li><a href="http://www.beantech.it/">beanTech</a></li>
-                  <li><a href="http://www.overnet.education/">Overnet Education</a></li>
-                  <li><a href="http://www.stesi.it/">Stesi Srl</a></li>
-                  <li><a href="http://www.unipordenone.it/">Consorzio Universitario di Pordenone</a></li>
-                </ul>
-              </p>          
-          </article>
-
-          <article class="blog-post">
-            <h2 class="display-5 link-body-emphasis mb-1">Call for speaker open!</h2>
-            <p class="blog-post-meta">
-              January 18, 2024 by <a target="_blank" href="https://www.linkedin.com/in/marcoparenzan/">Marco Parenzan</a>
-            </p>
-
-            <p>
-              Stiamo organizzando il Global Azure Bootcamp 2024 del Triveneto! Se hai una sessione da proporre, clicca <a href="https://sessionize.com/gab2024pn">qui</a>
-            </p>
-            <p>
-                Non abbiamo ancora una agenda, ma intanto se vuoi registrarti, clicca <a href="http://gab2024pn.eventbrite.it/">qui</a>
-              </p>
-          </article>
-
+          <h1>Registrazione</h1>
+          <p class="fs-5 col-md-12">
+            L'evento è gratuito, ma la registrazione obbligatoria. Dobbiamo sapere quanti siete per organizzarci al meglio!
+            Potete registrarvi sulla pagina di <a target="_blank" href="http://gab2024pn.eventbrite.it/">Eventbrite</a> o immediatamente
+            qui sotto
+          <div id="eventbrite-widget-container-798879619447"></div>
+          </p>
+              
         </div>
 
         <div class="col-md-4">
@@ -421,5 +361,26 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
       crossorigin="anonymous"
     ></script>
+
+    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://www.eventbrite.it/static/widgets/eb_widgets.js"></script>
+
+  <script type="text/javascript">
+    var exampleCallback = function () {
+      console.log('Order complete!');
+    };
+
+    window.EBWidgets.createWidget({
+      // Required
+      widgetType: 'checkout',
+      eventId: '798879619447',
+      iframeContainerId: 'eventbrite-widget-container-798879619447',
+
+      // Optional
+      iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+      onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+    });
+  </script>
   </body>
 </html>
